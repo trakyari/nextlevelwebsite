@@ -12,11 +12,14 @@
 
 <meta charset="utf-8">
 
+<!-- Main scripts - put last for load optimization. -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+
 <link rel="stylesheet" href="css/bootstrap.css"/>
 
 <link rel="stylesheet" href="css/autonation.css"/>
-
-<link rel="stylesheet" href="css/index.css"/>
 
 <title>Contact</title>
 
@@ -34,8 +37,8 @@
     	
     <!--- Navbar Mobile Toggle -->
         
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">        
-    	<span class="navbar-toggler-icon"></span>          
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
   	</button>
        
     <!-- Navbar content -->
@@ -59,30 +62,30 @@
           	-->
            <li class="nav-item">
                 <a href="parts.html" class="nav-link">Parts</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="service.html" class="nav-link">Services</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="partners.html" class="nav-link">Partners</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="quotes.html" class="nav-link">Quotes</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="about-us.html" class="nav-link">About Us</a>
-            </li>        	 
+            </li>
             <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact Us</a>
-            </li>             
-		</ul>  
+            </li>
+		</ul>
     </div>
       
 </nav>
 
 <!-- Expanded Navbar Content -->
 
-<!-- 
+<!--
 
 <div class="collapse" id="servicesExpandedContent">
 	<div class="d-none d-md-block">
@@ -106,14 +109,14 @@
 			<a class="nav-link navbar-expanded-content-item d-flex justify-content-center align-items-center flex-column" href="content/job-interviews.html">
 				<span>Quotes</span>
 			</a>
-		  </li>  
+		  </li>
 		</ul>
 	</div>
 </div>
 
--->	
+-->
 
-<!--- Main Body --->		
+<!--- Main Body --->
 
 <!--- Content Section 1 --->
 
@@ -158,7 +161,7 @@
     		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFuJ0USDDH51fpip5w4XEfUDBTei03_Ew&callback=initMap" type="text/javascript"></script>
 			</div>
 		<div class="col"></div>
-	</div>	
+	</div>
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-lg-6 col-sm-10">
@@ -187,10 +190,6 @@
 		<div class="col-lg-6 col-sm-10">
 			<form>
 				<div class="form-group mb-5">
-					<label for="mailingAddress">Mailing Address</label>
-					<input type="text" class="form-control" id="mailingAddress" aria-describedby="mailingAddress" placeholder="Mailing address">
-				</div>
-				<div class="form-group mb-5">
 					<label for="phoneNumber">Phone number</label>
 					<input type="number" class="form-control" id="phoneNumber" aria-describedby="phoneNumber" placeholder="Phone number">
 				</div>
@@ -206,7 +205,7 @@
 			<div class="col-lg-6 col-sm-10">
 				<form>
 					<div class="form-group mb-5">
-						<label for="feedback">Question / Comment</label>
+						<label for="feedback">Comments</label>
 						<textarea class="form-control" id="feedback" rows="5"></textarea>
 					</div>
 				</form>
@@ -222,64 +221,21 @@
 			<button type="submit" class="btn btn-block btn-contact mb-5 py-3">Submit</button>
 		</div>
 		<div class="col"></div>
-	</div> 	
+	</div>
 </div>
 
-<!-- Footer -->
+<script>
+$.get("footer.html", function(data){
+    $("#footer-placeholder").replaceWith(data);
+});
+</script>
 
-<div class="footer bg-footer text-white py-2">
-	<div class="container">    	
-    	<div class="row mb-3 justify-content-center">
-    		<div class="col-md-auto d-flex flex-column align-items-center mb-2 mb-md-0">
-				<h4>Content</h4>
-				<a href="parts.html" class="footer-link small">Parts</a>
-				<a href="service.html" class="footer-link small">Services</a>
-				<a href="partners.html" class="footer-link small">Partners</a>
-				<a href="quotes.html" class="footer-link small">Quotes</a>
-			</div>
-			<div class="col-md-auto d-flex flex-column align-items-center">
-				<h4>Company</h4>
-				<a href="index.html" class="footer-link small">Home</a>
-				<a href="contact.html" class="footer-link small">Contact</a>
-				<a href="about-us.html" class="footer-link small">About us</a>
-			</div>	
-		</div>	
-    	
-		<div class="row mb-1">
-			<div class="col text-center">
-				<div class="p-1">Connect with us on social media:</div>
-			</div>
-		</div>
 
-		<div class="row mb-2">
-			<div class="col text-center">   
-				<a href="https://www.instagram.com/spotter_jobhunt/" target="_blank"><img src="images/instagram-icon.svg" class="p-1 footer-icon" alt="Instragram Icon"></a>
-				<a href="https://twitter.com/spotter_jobhunt" target="_blank"><img src="images/twitter-icon.svg" class="p-1 footer-icon" alt="Twitter Icon"></a>
-				<a href="https://www.facebook.com/spotterservices/" target="_blank"><img src="images/facebook-icon.svg" class="p-1 footer-icon" alt="Facebook Icon"></a>
-				<a href="https://www.linkedin.com/in/gavin-pawell-8802a3156/" target="_blank"><img src="images/linkedin-icon.svg" class="p-1 footer-icon" alt="Linkedin Icon"></a>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
-			<div class="col text-center small">
-				<div class="mb-2">Copyright @ 2018</div>
-			</div>
-			<div class="w-100"></div>
-			<div class="col-6 text-center small">
-				<div class="mb-2">Images have been sourced from the public domain and their respective sites. All images and names belong to their respective owners and have been for used for educational purposes.</div>
-			</div> 
-		</div>
-    	
-    </div>    
-</div> 
-
-</body>
-
-<!--- Main scripts - put last for load optimization. --->
-
+<!-- Main scripts - put last for load optimization. -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="../js/bootstrap.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
 
+</body>
 </html>
 
