@@ -34,8 +34,8 @@
     	
     <!--- Navbar Mobile Toggle -->
         
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">        
-    	<span class="navbar-toggler-icon"></span>          
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
   	</button>
        
     <!-- Navbar content -->
@@ -59,30 +59,30 @@
           	-->
            <li class="nav-item">
                 <a href="parts.html" class="nav-link">Parts</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="service.html" class="nav-link">Services</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="partners.html" class="nav-link">Partners</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="quotes.html" class="nav-link">Quotes</a>
-            </li>  
+            </li>
             <li class="nav-item">
                 <a href="about-us.html" class="nav-link">About Us</a>
-            </li>        	 
+            </li>
             <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact Us</a>
-            </li>             
-		</ul>  
+            </li>
+		</ul>
     </div>
       
 </nav>
 
 <!-- Expanded Navbar Content -->
 
-<!-- 
+<!--
 
 <div class="collapse" id="servicesExpandedContent">
 	<div class="d-none d-md-block">
@@ -106,12 +106,12 @@
 			<a class="nav-link navbar-expanded-content-item d-flex justify-content-center align-items-center flex-column" href="content/job-interviews.html">
 				<span>Quotes</span>
 			</a>
-		  </li>  
+		  </li>
 		</ul>
 	</div>
 </div>
 
--->	
+-->
 
 <!--- Main Body --->
 
@@ -157,55 +157,105 @@
 			<a href="contact.html" class="btn btn-about-us-contact py-3">Contact Form</a>
 		</div>
 	</div>
-</div>		
+</div>
 
 <!-- Footer -->
-
-<div class="footer bg-footer text-white py-2">
-	<div class="container">    	
+<div class="footer">
+  <!-- Links -->
+	<div class="container-fluid bg-footer text-white pt-5 pb-4">
     	<div class="row mb-3 justify-content-center">
-    		<div class="col-md-auto d-flex flex-column align-items-center mb-2 mb-md-0">
-				<h4>Content</h4>
-				<a href="parts.html" class="footer-link small">Parts</a>
-				<a href="service.html" class="footer-link small">Services</a>
-				<a href="partners.html" class="footer-link small">Partners</a>
-				<a href="quotes.html" class="footer-link small">Quotes</a>
-			</div>
-			<div class="col-md-auto d-flex flex-column align-items-center">
-				<h4>Company</h4>
-				<a href="index.html" class="footer-link small">Home</a>
-				<a href="contact.html" class="footer-link small">Contact</a>
-				<a href="about-us.html" class="footer-link small">About us</a>
-			</div>	
-		</div>	
-    	
-		<div class="row mb-1">
-			<div class="col text-center">
-				<div class="p-1">Connect with us on social media:</div>
-			</div>
+    	  <!-- Content Links -->
+    		<div class="col-5 col-md-2 d-flex flex-column align-items-left">
+  				<div class="row">
+  		      <div class="col-auto">
+  		        <h4>Content</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  				<a href="parts.html" class="footer-link py-1">Parts</a>
+  				<a href="service.html" class="footer-link py-1">Services</a>
+  				<a href="partners.html" class="footer-link py-1">Partners</a>
+  				<a href="quotes.html" class="footer-link py-1">Quotes</a>
+  			</div>
+  			<!-- Main Links -->
+  			<div class="col-5 col-md-2 d-flex flex-column align-items-left">
+  				<div class="row">
+  		      <div class="col-auto">
+  		        <h4>Company</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  				<a href="index.html" class="footer-link py-1">Home</a>
+  				<a href="contact.html" class="footer-link py-1">Contact</a>
+  				<a href="about-us.html" class="footer-link py-1">About us</a>
+  			</div>
+  			<!-- Force content links to break into a new line after md breakpoint. -->
+  			<div class="w-100 d-block d-md-none py-3 py-md-0"></div>
+			  <!-- Hours -->
+  		  <div class="col-5 col-md-3">
+  		    <div class="row">
+  		      <div class="col-auto">
+  		        <h4>Hours</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  		    <div class="py-1">Monday - Friday : 8:00AM to 6:00PM</div>
+  		    <div class="py-1">Saturday : 8:00AM to 2:00PM</div>
+  		    <div class="py-1">Sunday : Closed</div>
+  		  </div>
+  		  <div class="col-5 col-md-2">
+  		    <div class="row">
+  		      <div class="col-auto">
+  		        <h4>Address</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  		    <div class="py-1">Next Level</div>
+  		    <div class="py-1">397 Charles Ct</div>
+  		    <div class="py-1">West Chicago, IL 60185</div>
+  		  </div>
+  		  <!-- Force content links to break into a new line after md breakpoint. -->
+  			<div class="w-100 d-block d-md-none py-3 py-md-0"></div>
+  		  <!-- Social Media Links -->
+  		  <div class="col-10 col-md-2 align-items-left">
+  		   <div class="row">
+  		      <div class="col-auto">
+  		        <h4>Social Media</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  		   <div class="d-flex flex-row">
+  		    <div>
+  		      <span></span>
+  		      <a href="https://www.instagram.com/spotter_jobhunt/" target="_blank"><img src="images/instagram-icon.svg" class="m-1 instagram-footer-icon" alt="Instragram Icon"></a>
+  		    </div>
+  		    <div>
+  		      <span></span>
+  		      <a href="http://bit.ly/2QkCv2U" target="_blank"><img src="images/twitter-icon.svg" class="m-1 twitter-footer-icon" alt="Twitter Icon"></a>
+  		    </div>
+  		    <div>
+  		      <span></span>
+  		      <a href="http://bit.ly/2SBHJsV" target="_blank"><img src="images/facebook-icon.svg" class="m-1 facebook-footer-icon" alt="Facebook Icon"></a>
+  		    </div>
+  		    </div>
+  			</div>
 		</div>
+  </div>
 
-		<div class="row mb-2">
-			<div class="col text-center">   
-				<a href="https://www.instagram.com/spotter_jobhunt/" target="_blank"><img src="images/instagram-icon.svg" class="p-1 footer-icon" alt="Instragram Icon"></a>
-				<a href="https://twitter.com/spotter_jobhunt" target="_blank"><img src="images/twitter-icon.svg" class="p-1 footer-icon" alt="Twitter Icon"></a>
-				<a href="https://www.facebook.com/spotterservices/" target="_blank"><img src="images/facebook-icon.svg" class="p-1 footer-icon" alt="Facebook Icon"></a>
-				<a href="https://www.linkedin.com/in/gavin-pawell-8802a3156/" target="_blank"><img src="images/linkedin-icon.svg" class="p-1 footer-icon" alt="Linkedin Icon"></a>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
+  <!-- Copyright Notice -->
+  <div class="container">
+		<div class="row justify-content-center bg-white text-dark py-5">
 			<div class="col text-center small">
-				<div class="mb-2">Copyright @ 2018</div>
+				<div class="mb-2">Copyright Next Level @ 2019</div>
 			</div>
 			<div class="w-100"></div>
-			<div class="col-6 text-center small">
+			<div class="col-8 text-center small">
 				<div class="mb-2">Images have been sourced from the public domain and their respective sites. All images and names belong to their respective owners and have been for used for educational purposes.</div>
-			</div> 
+			</div>
 		</div>
-    	
-    </div>    
-</div> 
+  </div>
+  
+</div>
 
 </body>
 

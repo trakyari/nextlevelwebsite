@@ -12,12 +12,6 @@
 
 <meta charset="utf-8">
 
-<!-- Main scripts - put last for load optimization. -->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="js/bootstrap.js" type="text/javascript"></script>
-
 <link rel="stylesheet" href="css/bootstrap.css"/>
 
 <link rel="stylesheet" href="css/autonation.css"/>
@@ -225,12 +219,103 @@
 	</div>
 </div>
 
-<script>
-$.get("footer.html", function(data){
-    $("#footer-placeholder").replaceWith(data);
-});
-</script>
+<!-- Footer -->
+<div class="footer">
+  <!-- Links -->
+	<div class="container-fluid bg-footer text-white pt-5 pb-4">
+    	<div class="row mb-3 justify-content-center">
+    	  <!-- Content Links -->
+    		<div class="col-5 col-md-2 d-flex flex-column align-items-left">
+  				<div class="row">
+  		      <div class="col-auto">
+  		        <h4>Content</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  				<a href="parts.html" class="footer-link py-1">Parts</a>
+  				<a href="service.html" class="footer-link py-1">Services</a>
+  				<a href="partners.html" class="footer-link py-1">Partners</a>
+  				<a href="quotes.html" class="footer-link py-1">Quotes</a>
+  			</div>
+  			<!-- Main Links -->
+  			<div class="col-5 col-md-2 d-flex flex-column align-items-left">
+  				<div class="row">
+  		      <div class="col-auto">
+  		        <h4>Company</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  				<a href="index.html" class="footer-link py-1">Home</a>
+  				<a href="contact.html" class="footer-link py-1">Contact</a>
+  				<a href="about-us.html" class="footer-link py-1">About us</a>
+  			</div>
+  			<!-- Force content links to break into a new line after md breakpoint. -->
+  			<div class="w-100 d-block d-md-none py-3 py-md-0"></div>
+			  <!-- Hours -->
+  		  <div class="col-5 col-md-3">
+  		    <div class="row">
+  		      <div class="col-auto">
+  		        <h4>Hours</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  		    <div class="py-1">Monday - Friday : 8:00AM to 6:00PM</div>
+  		    <div class="py-1">Saturday : 8:00AM to 2:00PM</div>
+  		    <div class="py-1">Sunday : Closed</div>
+  		  </div>
+  		  <div class="col-5 col-md-2">
+  		    <div class="row">
+  		      <div class="col-auto">
+  		        <h4>Address</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  		    <div class="py-1">Next Level</div>
+  		    <div class="py-1">397 Charles Ct</div>
+  		    <div class="py-1">West Chicago, IL 60185</div>
+  		  </div>
+  		  <!-- Force content links to break into a new line after md breakpoint. -->
+  			<div class="w-100 d-block d-md-none py-3 py-md-0"></div>
+  		  <!-- Social Media Links -->
+  		  <div class="col-10 col-md-2 align-items-left">
+  		   <div class="row">
+  		      <div class="col-auto">
+  		        <h4>Social Media</h4>
+  		        <div class="line bg-white"></div>
+  		      </div>
+  		    </div>
+  		   <div class="d-flex flex-row">
+  		    <div>
+  		      <span></span>
+  		      <a href="https://www.instagram.com/spotter_jobhunt/" target="_blank"><img src="images/instagram-icon.svg" class="m-1 instagram-footer-icon" alt="Instragram Icon"></a>
+  		    </div>
+  		    <div>
+  		      <span></span>
+  		      <a href="http://bit.ly/2QkCv2U" target="_blank"><img src="images/twitter-icon.svg" class="m-1 twitter-footer-icon" alt="Twitter Icon"></a>
+  		    </div>
+  		    <div>
+  		      <span></span>
+  		      <a href="http://bit.ly/2SBHJsV" target="_blank"><img src="images/facebook-icon.svg" class="m-1 facebook-footer-icon" alt="Facebook Icon"></a>
+  		    </div>
+  		    </div>
+  			</div>
+		</div>
+  </div>
 
+  <!-- Copyright Notice -->
+  <div class="container">
+		<div class="row justify-content-center bg-white text-dark py-5">
+			<div class="col text-center small">
+				<div class="mb-2">Copyright Next Level @ 2019</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="col-8 text-center small">
+				<div class="mb-2">Images have been sourced from the public domain and their respective sites. All images and names belong to their respective owners and have been for used for educational purposes.</div>
+			</div>
+		</div>
+  </div>
+  
+</div>
 
 <!-- Main scripts - put last for load optimization. -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
