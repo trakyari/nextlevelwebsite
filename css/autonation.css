@@ -3,10 +3,35 @@
 
 /* Site Wide Styling */
 
+/* Google Font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oxygen|Orbitron');
 
 body {
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive Text */
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(640px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(768px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(1024px) {
+  html {
+    font-size: 1.6rem;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -19,8 +44,8 @@ h1, h2, h3, h4 {
 }
 
 .navbar-icon {
-	width: 120px;
-	height: 60px;
+	width: 1rem;
+	height: auto;
 }
 
 .navbar-expanded-border-color {
@@ -37,7 +62,7 @@ h1, h2, h3, h4 {
 .navbar-expanded-content-item:hover {
 	color: #7C8893;
 	/*border-bottom: 2px solid #7C8893;*/
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .expanded-nav-icons {
@@ -61,7 +86,7 @@ h1, h2, h3, h4 {
 }
 
 .bg-red {
-	background-color:rgba(164,14,17,1.00); 
+	background-color:rgba(164,14,17,1.00);
 }
 
 .tile {
@@ -82,7 +107,8 @@ h1, h2, h3, h4 {
 .line {
 	height: 1px;
 	background-color: #dfdfdf;
-	max-width: 1200px;
+	max-width:100%;
+	margin-bottom: 1rem;
 }
 
 .modal-link {
@@ -101,31 +127,64 @@ h1, h2, h3, h4 {
 
 /* Footer Styling */
 
+/* Background color*/
 .bg-footer {
 	background-color:rgba(164,14,17,1.00);
 }
 
+
 .footer-link {
-	color: #000000;
+	color: #FFF;
 	transition-delay: 0.1s;
 }
 
 .footer-link:hover {
-	text-decoration: none;
-	color: #7C8893;
+	text-decoration:underline;
+	color:#FFF;
 }
 
-.footer-icon {
-	opacity:0.3;
-	width:40px; 
-	height:auto;
-	text-decoration: none;
+.twitter-footer-icon {
+  fill:#FFF
+  width:40px;
+  height:40px;
+  text-decoration:none;
+  background-color:#FFF;
+  border-radius:5px;
 }
 
-.footer-icon:hover {
-	opacity:1.0;
-	text-decoration:none;
+.twitter-footer-icon:hover {
+  text-decoration:none;
+  transition-duration: 0.5s;
 }
+
+.facebook-footer-icon {
+  fill:#FFF
+  width:40px;
+  height:40px;
+  text-decoration:none;
+  background-color:#FFF;
+  border-radius:5px;
+  opacity:0.5;
+}
+
+.facebook-footer-icon:hover {
+  opacity:1.0;
+}
+
+
+.instagram-footer-icon {
+  fill:#FFF
+  width:40px;
+  height:40px;
+  text-decoration:none;
+  background-color:#FFF;
+  border-radius:5px;
+}
+
+.instagram-footer-icon:hover {
+  
+}
+
 .logo {
 	height: 2rem;
 	width: 6.25rem;

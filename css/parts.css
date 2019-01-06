@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn-cart {
+  
+  font-size: 1.5rem;
+  background-color:rgba(164,14,17,1.00);
+  color:#FFFFFF;
+  transition-duration: 0.5s;
+	transition-timing-function: ease;
+	border-radius: 0px;
+
+}
+
+.btn-cart:hover {
+  
+  background-color:rgba(164,14,17,0.5);
+  
+}
+
+.tile-stage-1 {
+  background-image:
+  linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.55)
+    ),
+		url(../images/parts-banner-1.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25rem;
+	
+}
+
+.tile-stage-2 {
+  background-image:
+  linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.55)
+    ),
+		url(../images/parts-banner-2.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25rem;
+	
+  
+}
+
+.tile-stage-3 {
+  background-image:
+  linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.55)
+    ),
+		url(../images/parts-banner-3.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25rem;
+}
+
+.tile-border {
+  
+  border-width: 10px 10px 10px 10px;
+	border-color:rgba(164,14,17,0.5);
+  
+}
+
+.tile-text {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #FFF;
+}
+
+.pillar {
+  height: 2rem;
+}
