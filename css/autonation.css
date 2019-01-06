@@ -150,11 +150,13 @@ h1, h2, h3, h4 {
   text-decoration:none;
   background-color:#FFF;
   border-radius:5px;
+  opacity:0.5;
 }
 
 .twitter-footer-icon:hover {
   text-decoration:none;
   transition-duration: 0.5s;
+  opacity:1.0;
 }
 
 .facebook-footer-icon {
@@ -179,10 +181,11 @@ h1, h2, h3, h4 {
   text-decoration:none;
   background-color:#FFF;
   border-radius:5px;
+  opacity:0.5;
 }
 
 .instagram-footer-icon:hover {
-  
+  opacity:1.0;
 }
 
 .logo {
