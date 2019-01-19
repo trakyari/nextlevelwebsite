@@ -160,7 +160,7 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-lg-6 col-sm-10">
-			<form>
+			<form class="needs-validation" novalidate>
 				<div class="form-group mb-5">
 					<label for="firstName">First Name</label>
 					<input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First name">
@@ -183,8 +183,8 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-lg-6 col-sm-10">
-			<form>
-				<div class="form-group mb-5">
+			<form class="needs-validation" novalidate>
+				<div class="form-group  mb-5">
 					<label for="phoneNumber">Phone number</label>
 					<input type="number" class="form-control" id="phoneNumber" aria-describedby="phoneNumber" placeholder="Phone number">
 				</div>
@@ -193,13 +193,34 @@
 		<div class="col"></div>
 	</div>
 	<div class="row">
+      <div class="col"></div>
+	    <div class="col-lg-6 col-sm-10">
+	      <form class="needs-validation" novalidate>
+          <div class="form-group  mb-5">
+            <label for="automobileMake">Automobile make</label>
+            <input type="text" class="form-control" id="automobileMake" placeholder="Automobile make">
+          </div>
+          <div class="form-group  mb-5">
+            <label for="automobileModel">Automobile model</label>
+            <input type="text" class="form-control" id="automobileModel" placeholder="Automobile model">
+          </div>
+          <div class="form-group  mb-5">
+            <label for="automobileYear">Automobile year</label>
+            <input type="numver" class="form-control" id="automobileYear" placeholder="Automobile year">
+          </div>
+        </form>
+      </div>
+      <div class="col"></div>
+  </div>
+	    
+	<div class="row">
 		<div class="col line mb-5"></div>
 	</div>
 	<div class="row">
 		<div class="col"></div>
 			<div class="col-lg-6 col-sm-10">
-				<form>
-					<div class="form-group mb-5">
+				<form class="needs-validation" novalidate>
+					<div class="form-group  mb-5">
 						<label for="feedback">Comments</label>
 						<textarea class="form-control" id="feedback" rows="5"></textarea>
 					</div>
@@ -218,6 +239,28 @@
 		<div class="col"></div>
 	</div>
 </div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
 
 <!-- Footer -->
 <div class="footer">
@@ -287,15 +330,15 @@
   		   <div class="d-flex flex-row">
   		    <div>
   		      <span></span>
-  		      <a href="https://www.instagram.com/spotter_jobhunt/" target="_blank"><img src="images/instagram-icon.svg" class="m-1 instagram-footer-icon" alt="Instragram Icon"></a>
+  		      <a href="http://bit.ly/2CRuUVW" target="_blank"><img src="images/instagram-icon.svg" class="mr-1 instagram-footer-icon" alt="Instragram Icon"></a>
   		    </div>
   		    <div>
   		      <span></span>
-  		      <a href="http://bit.ly/2QkCv2U" target="_blank"><img src="images/twitter-icon.svg" class="m-1 twitter-footer-icon" alt="Twitter Icon"></a>
+  		      <a href="http://bit.ly/2QkCv2U" target="_blank"><img src="images/twitter-icon.svg" class="mx-1 twitter-footer-icon" alt="Twitter Icon"></a>
   		    </div>
   		    <div>
   		      <span></span>
-  		      <a href="http://bit.ly/2SBHJsV" target="_blank"><img src="images/facebook-icon.svg" class="m-1 facebook-footer-icon" alt="Facebook Icon"></a>
+  		      <a href="http://bit.ly/2SBHJsV" target="_blank"><img src="images/facebook-icon.svg" class="ml-1 facebook-footer-icon" alt="Facebook Icon"></a>
   		    </div>
   		    </div>
   			</div>
